@@ -10,7 +10,7 @@ function SearchBox({ change, value }) {
         value={value}
         onChange={change}
         className="form-control search-box"
-        placeholder="type a movie to search for" 
+        placeholder="type a movie to search for"   
       />
     </div>
   );
