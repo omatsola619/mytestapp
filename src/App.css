@@ -87,10 +87,14 @@ header .logo {
   }
   .intro-text {
     text-align: center;
+    margin-left: 0;
   }
   .intro {
     justify-content: center;
     margin-left: 0;
+  }
+  header .logo{
+     margin-left: 0;
   }
 }
 /*responsiveness for iphone SE*/
