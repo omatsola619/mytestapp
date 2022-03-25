@@ -38,7 +38,7 @@ function App() {
       <SearchBox change={onTextChange} value={searchQuery} />
       <div class="list">
         {/*movie list here */}
-        <h3 className="int-text">Searched Movies</h3>
+        <h3 className="int-text">Search Results</h3>
         <MovieList movies={movieList} />
         {/*movies category section */}
         <MovieCategory />

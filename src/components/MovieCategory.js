@@ -7,7 +7,7 @@ function MovieCategory() {
 
   const fetchData = async () => {
     const response = await axios.get(
-      "https://www.omdbapi.com/?s=star%20wars&type=series&apikey=9a7e9844"
+      "https://www.omdbapi.com/?s=christmas&apikey=9a7e9844"
     );
     setMovies(response.data.Search);
   };
@@ -18,14 +18,14 @@ function MovieCategory() {
 
   return (
     <div>
-      <h3 className="int-text">Star Wars Series</h3>
+      <h3 className="int-text">Christmas Movies</h3>
       <div className="container-fluid movie-app">
         <div class="row">
           {movies?.length
             ? movies.map((movie) => (
-                <>
+                <div className="mid" key={movie.imdbID}>
                   <img src={movie.Poster} alt="" />
-                </>
+                </div>
               ))
             : "No Movie Searched"}
         </div>

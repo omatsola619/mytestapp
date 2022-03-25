@@ -6,13 +6,15 @@ function MovieList({ movies }) {
     <div>
       <div className="container-fluid movie-app">
         <div class="row">
-          {movies?.length
-            ? movies.map((movie) => (
-                <>
-                  <img src={movie.Poster} alt="" />
-                </>
-              ))
-            : <h3 className="empty">No Movie Searched...</h3>}
+          {movies?.length ? (
+            movies.map((movie) => (
+              <div className="mid" key={movie.imdbID}>
+                <img src={movie.Poster} alt="" />
+              </div>
+            ))
+          ) : (
+            <h3 className="empty">No Movie Searched...</h3>
+          )}
         </div>
       </div>
     </div>

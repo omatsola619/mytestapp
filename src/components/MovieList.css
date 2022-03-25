@@ -12,10 +12,17 @@
 .movie-app .row::-webkit-scrollbar {
   display: none;
 }
-
+.mid{
+  padding: 0;
+  width: 313px;
+}
 @media screen and (max-width: 321px){
   .movie-app img{
     width: 200px;
     height: 200px;
+  }
+  .mid{
+    padding: 0;
+    width: 213px;
   }
 }
